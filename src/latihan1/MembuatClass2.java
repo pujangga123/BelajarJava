@@ -1,13 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package latihan1;
 
-/**
- *
- * @author En Tay
- */
-public class MembuatClass2 {
+class Persegi {
+    public Integer panjang;
+    public Integer lebar;
     
+    // constructor
+    public Persegi(Integer p, Integer l) {
+        this.panjang = p;
+        this.lebar = l;
+    }
+    
+    public Integer luas() {
+        return this.panjang * this.lebar;
+    }
+}
+
+public class MembuatClass2 {
+    public static void main(String[] args) {
+        Persegi kotak = new Persegi(2,3);
+        System.out.println("Luas persegi:"+kotak.luas());
+    }
 }
