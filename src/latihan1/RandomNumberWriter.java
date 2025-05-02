@@ -6,9 +6,9 @@ import java.io.IOException;
 public class RandomNumberWriter {
     public static void main(String[] args) {
 
-        try (FileWriter writer = new FileWriter("test1.txt")) {
-            for (int i = 0; i < 10; i++) {
-                long randomNumber = Math.round(Math.random() * 100); 
+        try (FileWriter writer = new FileWriter("src/latihan1/test1.txt")) {
+            for (int i = 0; i < 100; i++) {
+                long randomNumber = Math.round(Math.random() * 1000); 
                 writer.write(randomNumber + "\n");
             }
         } catch (IOException e) {
