@@ -17,7 +17,9 @@ class Persegi {
 
 public class MembuatClass2 {
     public static void main(String[] args) {
-        Persegi kotak = new Persegi(2,3);
+        Integer p = 2;
+        Integer l = 3;
+        Persegi kotak = new Persegi(p,l);
         System.out.println("Luas persegi:"+kotak.luas());
     }
 }
