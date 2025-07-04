@@ -6,7 +6,11 @@ public class DemoMahasiswa1 {
         mahasiswa.nim="2000001";
         mahasiswa.nama = "Budianto";
         mahasiswa.nilai = 20;
-        mahasiswa.tambah();
-        System.out.println("Data berhasil ditambahkan");
+        if(mahasiswa.tambah()==true) {
+            System.out.println("Data berhasil ditambahkan");
+        } else {
+            System.out.println("GAGAL");
+        }
+        
     }
 }

@@ -30,8 +30,17 @@ public class Mahasiswa {
             st.executeUpdate();
             conn.close();
             return true;
-        } catch (Exception ex) {
+        } catch (SQLSyntaxErrorException ex) {
+            System.out.println("Error");
             return false;
+        } catch (SQLException ex) {
+            System.out.println("Error Koneksi");
+            return false;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return false;
+        } finally {
+            
         }
 
     }
